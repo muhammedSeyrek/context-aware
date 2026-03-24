@@ -35,4 +35,11 @@ export const getParticipants = () => api.get('/dashboard/participants')
 
 export const exportUrl = (type) => `/api/dashboard/export/${type}`
 
+// ── Analysis / Dataset ────────────────────────────────────────────────────────
+
+export const uploadDataset = (formData) =>
+  api.post('/analysis/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+export const getSamples = () => api.get('/analysis/samples')
+export const analyzeSample = (name) => api.post(`/analysis/samples/${name}`)
+
 export default api

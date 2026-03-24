@@ -18,6 +18,7 @@ export default function DashboardLayout() {
           <Link to="/dashboard/scenarios" className={isActive('/dashboard/scenarios')}>Senaryo Analizi</Link>
           <Link to="/dashboard/participants" className={isActive('/dashboard/participants')}>Katılımcılar</Link>
           <Link to="/dashboard/export" className={isActive('/dashboard/export')}>Veri Dışa Aktarım</Link>
+          <Link to="/dashboard/dataset" className={isActive('/dashboard/dataset')}>Dataset Analizi</Link>
         </nav>
 
         <div style={{ marginTop: 'auto', paddingTop: '2rem' }}>

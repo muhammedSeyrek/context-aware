@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import init_db
-from routers import sessions, scenarios, surveys, dashboard
+from routers import sessions, scenarios, surveys, dashboard, analysis
 
 app = FastAPI(
     title="Context-Aware Security Simulation Platform",
@@ -24,6 +24,7 @@ app.include_router(sessions.router)
 app.include_router(scenarios.router)
 app.include_router(surveys.router)
 app.include_router(dashboard.router)
+app.include_router(analysis.router)
 
 
 @app.on_event("startup")

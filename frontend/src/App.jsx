@@ -13,6 +13,7 @@ import Overview from './pages/ResearcherDashboard/Overview'
 import MetricsCharts from './pages/ResearcherDashboard/MetricsCharts'
 import ParticipantList from './pages/ResearcherDashboard/ParticipantList'
 import ExportPanel from './pages/ResearcherDashboard/ExportPanel'
+import DatasetAnalysis from './pages/ResearcherDashboard/DatasetAnalysis'
 
 // ─── Participant Flow (stateful, single-page wizard) ─────────────────────────
 
@@ -63,6 +64,7 @@ export default function App() {
         <Route path="scenarios" element={<MetricsCharts />} />
         <Route path="participants" element={<ParticipantList />} />
         <Route path="export" element={<ExportPanel />} />
+        <Route path="dataset" element={<DatasetAnalysis />} />
       </Route>
 
       {/* Catch-all */}
